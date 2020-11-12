@@ -1,0 +1,41 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<div>
+  <input type="text" (change)="search($event)"/>
+  <h3>Found DOCS</h3>
+  <div *ngFor="let doc of documentsFound">
+    <h4>Title:</h4>
+    <p>{{doc.title}}</p>
+    <h5>Body:</h5>
+    <p>{{doc.body}}</p>
+    <h5>Tags:</h5>
+    <p>{{doc.tags}}</p>
+  </div>
+  <h3>All DOCS</h3>
+  <div *ngFor="let doc of documents">
+    <h4>Title:</h4>
+    <p>{{doc.title}}</p>
+    <h5>Body:</h5>
+    <p>{{doc.body}}</p>
+    <h5>Tags:</h5>
+    <p>{{doc.tags}}</p>
+  </div>
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+<router-outlet></router-outlet>
